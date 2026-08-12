@@ -13,6 +13,16 @@ class MainController : public engine::core::Controller {
 public:
     void initialize();
     bool loop();
+
+    void draw_backpack();
+
+    void begin_draw() override;
+
+    void draw() override;
+
+    void end_draw() override;
+
+
 };
 
 }// namespace app

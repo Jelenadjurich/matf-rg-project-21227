@@ -5,7 +5,7 @@
 #include "MainController.hpp"
 
 
-
+#include "GuiController.hpp"
 #include "engine/core/App.hpp"
 #include "engine/core/Controller.hpp"
 #include "engine/graphics/GraphicsController.hpp"
@@ -22,9 +22,11 @@ namespace app {
     };
 
     void MainPlatformEventObserver::on_mouse_move(engine::platform::MousePosition position){
-        auto camera= engine::core::Controller::get<engine::graphics::GraphicsController>()->camera();
-        camera->rotate_camera(position.dx,position.dy);
-
+        auto gui_controler = engine::core::Controller::get<GUIController>();
+        if (!gui_controler->is_enabled()) {
+            auto camera= engine::core::Controller::get<engine::graphics::GraphicsController>()->camera();
+            camera->rotate_camera(position.dx,position.dy);
+        }
     }
 
     void MainController::initialize() {
@@ -63,6 +65,10 @@ namespace app {
     }
 
     void MainController::update_camera() {
+        auto gui_controler = engine::core::Controller::get<GUIController>();
+        if (gui_controler->is_enabled()) {
+            return;
+        }
         auto platform = engine::core::Controller::get<engine::platform::PlatformController>();
         auto graphics   = engine::core::Controller::get<engine::graphics::GraphicsController>();
         auto camera = graphics->camera();

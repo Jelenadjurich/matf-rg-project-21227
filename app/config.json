@@ -1,11 +1,25 @@
 {
   "resources": {
     "models": {
-      "backpack": {
-        "path": "backpack/backpack.obj"
+      "nefertiti": {
+        "path": "nefertiti/nefertiti_HQ2.obj",
+        "flip_uvs": true
       },
-      "train": {
-        "path": "train/kumoha52_20170928.obj"
+      "cezar": {
+        "path": "cezar/Israel Museum Egypt.obj",
+        "flip_uvs": true
+      },
+      "floor": {
+        "path": "floor/podloga.obj",
+        "flip_uvs": true
+      },
+      "wall": {
+        "path": "wall/wall.obj",
+        "flip_uvs": true
+      },
+      "lamp": {
+        "path": "lamp/street_lamp_02.obj",
+        "flip_uvs": true
       }
     }
   },

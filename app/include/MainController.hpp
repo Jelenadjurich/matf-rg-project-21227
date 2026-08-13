@@ -21,6 +21,9 @@ public:
 
     void begin_draw() override;
 
+    void draw_skyboxes();
+    void draw_train();
+
     void draw() override;
 
     void end_draw() override;

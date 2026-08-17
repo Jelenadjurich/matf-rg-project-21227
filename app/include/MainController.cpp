@@ -14,7 +14,7 @@
 #include "engine/graphics/OpenGL.hpp"
 #include "engine/platform/PlatformController.hpp"
 #include "engine/resources/ResourcesController.hpp"
-#include "glad/glad.h"
+//#include "glad/glad.h"
 
 
 namespace app {
@@ -159,7 +159,7 @@ namespace app {
     }
 
     void MainController::begin_draw() {
-            glClearColor(0.82f, 0.80f, 0.74f, 1.0f);
+           // glClearColor(0.82f, 0.80f, 0.74f, 1.0f);
             engine::graphics::OpenGL::clear_buffers();
     }
     void MainController::draw_skyboxes() {

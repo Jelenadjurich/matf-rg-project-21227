@@ -11,7 +11,7 @@ namespace app {
 
 class MyApp: public engine::core::App{
     void app_setup() override;
-    MainController mainController;
+    MainController m_main_controller;
 
 };
 

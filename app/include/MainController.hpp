@@ -11,7 +11,7 @@
 namespace app {
 
 class MainController : public engine::core::Controller {
-public:
+private:
     void initialize();
     bool loop();
 

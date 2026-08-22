@@ -1,11 +1,31 @@
 {
   "resources": {
     "models": {
+      "nefertiti": {
+        "path": "nefertiti/nefertiti_HQ2.obj",
+        "flip_uvs": true
+      },
+      "cezar": {
+        "path": "cezar/Israel Museum Egypt.obj",
+        "flip_uvs": true
+      },
+      "floor": {
+        "path": "floor/podloga.obj",
+        "flip_uvs": true
+      },
+      "wall": {
+        "path": "wall/wall.obj",
+        "flip_uvs": true
+      },
+      "lamp": {
+        "path": "lamp/street_lamp_02.obj",
+        "flip_uvs": true
+      }
     }
   },
   "window": {
-    "height": 600,
+    "height": 800,
     "title": "Hello, window!",
-    "width": 800
+    "width": 1600
   }
 }

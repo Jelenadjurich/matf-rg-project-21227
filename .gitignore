@@ -20,3 +20,7 @@ engine/test/app/test-app
 app/APP
 .venv
 engine/libs/glfw/src
+.DS_Store
+app/.DS_Store
+engine/.DS_Store
+app/imgui.ini

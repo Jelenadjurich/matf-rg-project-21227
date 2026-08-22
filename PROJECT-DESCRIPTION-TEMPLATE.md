@@ -1,22 +1,29 @@
-# {NAME-OF-THE-PROJECT}
+# Tiny Egyptian museum
 
-{INDEX} - {STUDENT-FULL-NAME}  
-{PROJECT DESCRIPTION}
+277/2021 - Jelena Djuric 
+
+A small museum showcasing a part of Egyptian culture, featuring sculptures of Nefertiti and Caesar illuminated by a lamp,
+with walls and a floor creating an exhibition-space atmosphere.
+
 
 ## Controls
 
-{BUTTON1} -> {ACTION1}  
-{BUTTON2} -> {ACTION2}  
-...  
-{BUTTONN} -> {ACTIONN}
+Button RIGHT -> Move the point light to the right
+Button LEFT -> Move the point light to the left
+Button UP -> Move the point light forward
+Button DOWN -> Move the point light backward
+Button PAGE UP -> Raise the point light
+Button PAGE DOWN -> Lower the point light
+Button = -> Increase the point light intensity
+Button - -> Decrease the point light intensity
 
 ## Features
 
 ### Fundamental:
 
-[ ] Model with lighting
-[ ] Two types of lighting with customizable colors and movement through GUI or ACTIONS
-[ ] {ACTION_X} --- AFTER_M_SECONDS---Triggers---> {EVENT_A} ---> AFTER_N_SECONDS---Triggers---> {EVENT_B}
+[x] Model with lighting
+[x] Two types of lighting with customizable colors and movement through GUI or ACTIONS
+[x] Button T click --- AFTER_2_SECONDS---Triggers---> Change light color to red ---> AFTER_2_SECONDS---Triggers---> Remove lamp model from scene
 
 ### Group A:
 
@@ -36,8 +43,9 @@
 
 ## Models:
 
-[link1]   
-[link2]
+Cezar: https://sketchfab.com/3d-models/statue-of-ramesses-iii-dec51e9168814cd38982e9f0d165de80
+Nefertiti: https://sketchfab.com/3d-models/nefertitis-bust-like-in-the-museum-ce5b14926e494558ab584375a8d63ca7
+Lamp: https://sketchfab.com/3d-models/street-lamp-01c53767c1f84f55ad9f46eb89949cf9
 
 ## Textures
 
